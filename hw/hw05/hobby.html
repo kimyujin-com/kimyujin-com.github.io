@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> 피아노 </title>
+        <style>
+            h1 {
+                color:#f34763;
+                margin-left: 720px;
+                }
+            hr {
+                width: 700px;
+                height: 10px;
+                background-color: pink;
+            }
+            img {
+                 width: 30px;
+                 height: 30px;
+                }
+            div {
+                margin-left: 450px;
+                }
+            div.play {
+                      margin-left:300px;
+                     }
+            div.explanation {
+                            margin-left: 350px;
+                            }
+            video {
+                width: 300px;
+                height: 250px;
+            }
+            iframe {
+                width: 500px;
+                height: 300px;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <a href="hw05.html"><img src="./img/home.png"></a>
+        <h1>Piano</h1>
+        <hr></hr>
+        <div>
+           <video src="./video/summer.mp4" controls muted></video>
+           <video src="./video/river.mp4" controls muted></video>
+        </div>
+        <div class="explanation">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Summer 연습 진행률: <progress value="60" max="100" title="연습 진행"></progress>
+            &nbsp;&nbsp;&nbsp;River Flows in You 연습 진행률: <progress value="40" max="100" title="연습 진행"></progress>
+        </div>
+        <p/><br><br><br>
+        <div class="play">
+            <iframe src="https://www.youtube.com/embed/l0GN40EL1VU"></iframe>
+            <iframe src="https://www.youtube.com/embed/7maJOI3QMu0"></iframe>
+        </div>
+    </body>
+</html>
