@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> 책</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+            img.book {
+                width: 300px; 
+                height: 370px;
+                margin-left:20px;
+                margin-right: 20px;
+                box-shadow: 5px 5px 10px gray;
+                }
+            #books {
+                    column-count: 3;
+                    margin-top: 30px;
+                   }
+            #books figure{
+                          display: inline-block;
+                          border: 2px dashed hsla(27, 91%, 49%, 0.856);
+                          box-shadow: 5px 5px 7px hsla(27, 91%, 49%, 0.856);
+                         }
+            #books figcaption{
+                               /* border: 2px solid hsl(41, 68%, 48%); */
+                               margin: 20px;
+                             }
+            img.back{
+                    width: 40px;
+                    float:left;
+                    }
+            img.cart {
+                      width: 20px;
+                      height: 20px;
+                      }
+            .order{
+                  clear:left;
+                  margin-left: 550px;
+                  font-family: 'Anton', sans-serif; 
+                  color: orange;
+                  font-size: 30px;
+                  }
+            .input {
+                margin-top: 10px;
+                text-align:center;
+                border: 1px solid rgba(201, 157, 12, 0.7);
+                background-color:rgba(235, 195, 121, 0.3);
+            }
+            footer {
+                border-top: 3px dashed orange;
+                margin-top: 40px;
+                padding-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="hw07.html"><img src="img/back.png" class="back"></a>
+        <header>
+            <div class="order">
+                <h1>Online Market</h1>
+            </div>
+        </header>
+        <div id="books">
+            <figure>
+                <img src="img/booklist1.jpg" class="book">
+                <figcaption><h3>귀멸의 칼날 23 한정판</h3>
+                    <small>고토게 코요하루 글그림 | 학산문화사 | 2021 04 23</small><br><br>
+                    <strong>수량:</strong> <input type="number" name="count" min="1" max="10" class="count">
+                    <div class="input"><strong>카트에 담기</strong></div>
+                    <div class="input"><strong>바로 구매하기</strong></div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/booklist2.jpg" class="book">
+                <figcaption><h3>아들아, 돈 공부해야 한다</h3>
+                    <small>정선용 저 | 알에치코리아 | 2021 03 25</small><br><br>
+                    <strong>수량:</strong> <input type="number" name="count" min="1" max="10" class="count">
+                    <div class="input"><strong>카트에 담기</strong></div>
+                    <div class="input"><strong>바로 구매하기</strong></div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/booklist3.jpg" class="book">
+                <figcaption><h3>서른살, 비트코인으로 퇴사합니다</h3>
+                    <small>강기태 저 | 국일증권경제연구소 | 2021 04 15</small><br><br>
+                    <strong>수량:</strong> <input type="number" name="count" min="1" max="10" class="count">
+                    <div class="input"><strong>카트에 담기</strong></div>
+                    <div class="input"><strong>바로 구매하기</strong></div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/booklist4.jpg" class="book">
+                <figcaption><h3>어떤 죽음이 삶에게 말했다</h3>
+                    <small>김범석 저 | 흐름출판  | 2021 01 18</small><br><br>
+                    <strong>수량:</strong> <input type="number" name="count" min="1" max="10" class="count">
+                    <div class="input"><strong>카트에 담기</strong></div>
+                    <div class="input"><strong>바로 구매하기</strong></div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/booklist5.jpg" class="book">
+                <figcaption><h3>어떻게 말해줘야 할까</h3>
+                    <small>오은영 저/차상미 그림 | 김영사 | 2020 10 25</small><br><br>
+                    <strong>수량:</strong> <input type="number" name="count" min="1" max="10" class="count">
+                    <div class="input"><strong>카트에 담기</strong></div>
+                    <div class="input"><strong>바로 구매하기</strong></div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/booklist6.jpg" class="book">
+                <figcaption><h3>질서 너머</h3>
+                    <small>조던 B. 피터슨 저| 웅진지식하우스 | 2021 03 23</small><br><br>
+                    <strong>수량:</strong> <input type="number" name="count" min="1" max="10" class="count">
+                    <div class="input"><strong>카트에 담기</strong></div>
+                    <div class="input"><strong>바로 구매하기</strong></div>
+                </figcaption>
+            </figure>
+        </div>
+        <footer>
+            이미지 자료 출처 | yes24
+        </footer>
+    </body>
+</html>

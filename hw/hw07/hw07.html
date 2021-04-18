@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>홈페이지</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=RocknRoll+One&family=Train+One&display=swap');
+            #main{
+                   float:left;
+                   border-bottom: 10px solid pink;
+                   text-align: center;
+                   margin-left: 750px;
+                   font-family:'Lobster', cursive;
+                   font-size: 30px;
+                   color:#c085f8;
+                 }
+            #login{
+                    float:right;
+                    border: 3px solid #4c5df0;
+                    font-family:'Lobster', cursive;
+                    font-size: 20px;
+                    width: 400px;
+                    text-align:center;
+            }
+            #imgmain{
+/*                      position:absolute;
+                     top:100px; left: 0px; */
+                     clear:left;
+                     width:300px;
+                     height:300px;
+                     margin-top: 20px;
+                    }
+            #menu{
+                   clear:left;
+                   border: 2px solid pink;
+                   width: 800px;
+                   height: 30px;
+                   text-align: center;
+                   padding: 5px;
+                   margin-left: 300px;
+                   font-family:'Lobster', cursive;
+                   font-size: 20px;
+                }
+            div.adv1{
+                clear:left;
+/*                 border: 2px solid red; */
+                /* display:grid;
+                grid-template-columns: 400px 1fr; */
+                margin-top:30px;
+                margin-left: 200px;
+            }
+            img.newbook{
+                width:300px;
+                height:400px;
+                box-shadow: 10px 10px 10px #e4e47e;
+                padding-left:40px;
+                transition: width 10s, height 10s;
+            }
+            img.newbook:hover {
+                                width: 350px;
+                                height: 500px;
+                              }
+            img.insta{
+                width: 30px;
+                height:30px;
+                padding-top:3px;
+            }
+            img.cake{
+                width: 500px;
+                height:400px;
+                padding-left: 60px;
+                box-shadow:30px 20px 10px pink;
+                transition: width 10s, height 10s;
+            }
+            img.cake:hover{
+                            width: 600px;
+                            height: 450px;
+                          }
+            h2.straw{
+                font-family: 'Dancing Script', cursive;
+                font-size:40px;
+                color:#eb3b58;
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+            h2.book{
+                font-family:'RocknRoll One', sans-serif;
+                color:hsl(24, 91%, 58%);
+                padding-left: 105px;
+/*                 border-bottom: 3px dotted rgb(255, 81, 0);
+                border-bottom-width: 5px; */
+            }
+            #menusub {
+                      width: 814px;
+                      height: 0px;
+                      /* border: 2px solid rgba(248, 159, 241, 0.5); */
+                      background-color: rgba(248, 159, 241, 0.5);
+                      margin-left: 300px;
+                      transition-property: height, opacity;
+                      /* display:grid; */
+                      /* grid-template-columns:1fr 1fr 1fr 1fr 1fr; */
+                      opacity: 0.01;
+                      font-family:'RocknRoll One', sans-serif;
+                      color: black;
+                    }
+            #menusub li {
+                list-style-type:none;
+            }
+           #menusub:hover {
+                            height: 130px;
+                            opacity: 1.0;
+                            }
+            .first {
+                    padding-left: 50px;
+                    float:left;
+            }
+            .second{
+                padding-left: 40px; 
+                float:left;
+            }
+            .third {
+                padding-left: 65px;
+                float:left;
+            }
+            .fourth {
+                padding-left: 10px;
+                float:left;
+            }
+            .fifth {
+                float:left;
+            }
+            .map {
+                width: 230px;
+                height: 300px;
+                margin-left: 60px;
+            }
+            .map li {
+                list-style: none;
+            }
+            div.map1 {
+                border: 1px solid rgba(67, 233, 116, 0.5);
+                width: 130px;
+                height: 130px;
+                transition: width 3s, height;
+                transition-timing-function: ease-in-out;
+                background-color: rgba(67, 233, 116, 0.5);
+                    }
+            .weather {
+                        opacity: 0.02;
+            }
+            .weather h3 {border-bottom:1px solid gray;}
+            .map1 li {
+                display:inline;
+            }    
+            /* div.submap{
+                float:left;
+            } */
+            div.map1:hover {width: 220px;
+                            height: 250px;
+                            }
+            .weather:hover {
+                opacity: 1.0;
+            }
+            .book1 {
+                float:left;
+            }
+            .book2 {float:left;}
+            aside {
+                   float:left;
+                   margin-left: 50px;
+                   }
+            footer .box2 li {
+                        display:inline;
+            }
+            footer {
+                border: 1px solid gray;
+                background-color:gray;
+                color: white;
+                margin-top: 700px;
+                padding-left: 60px;
+                padding-bottom: 30px;
+            }
+            img.sun {
+                width: 200px;
+                height: 60px;
+            }
+            .bus {
+                border: 1px solid blue;
+                background-color: white;
+                width: 100px;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h3 id="main">#BOOK #COFFEE #SCENT</h3> <!-- 추천 향, 커피, 책 -->
+            <div id="login">
+                <a href="login.html">Login</a> | <a href="membership.html">Membership</a>| <img src="img/instagram.png" class="insta">
+            </div>
+            <div id="menu">
+                <a href="menu.html">MENU</a> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;<a href="booklist.html">Recommended Books</a>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; <a href="scent.html">Cafe Scent</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="books.html">Book Market</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="form.html">EVENT</a>
+            </div>
+            <div id="menusub">
+                <div class="first">
+                    <ul>
+                        <li>coffee</li>
+                        <li>cake</li>
+                        <li>sandwich</li>
+                    </ul>
+                </div>
+                <div class="second">
+                    <ul>
+                        <li>BEST1</li>
+                        <li>BEST2</li>
+                        <li>BEST3</li>
+                    </ul>
+                </div>
+                <div class="third">
+                    <ul>
+                        <li>시트러스</li>
+                        <li>플로럴</li>
+                        <li>그린</li>
+                    </ul>
+                </div>
+                <div class="fourth">
+                    <ul>
+                        <li>online market</li>
+                    </ul>
+                </div>
+                <div class="fifth">
+                    <ul>
+                        <li>설문조사</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="adv1">
+            <div class="book1">
+                <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788954677608&orderClick=41a"><img src="img/newbook1.jpg" class="newbook"></a>
+                <p> <h2 class="book">NEW BOOK</h2>
+                    <h3>어쩌면 스무 번 <small>편혜영 | 문학동네 | 2021-03-17</small></h3></p>
+            </div>
+            <div class="book2">
+                <img src="img/newcake.jpg"class="cake">
+                <p><h2 class="straw">Season Limited Strawberry Cream bread</h2></p>
+            </div>
+        </div>
+        <aside>
+            <div class="map">
+                <ul>
+                    <li><div class="map1"><img src="img/map1.jpg">
+                        <div class="weather">
+                            <input type="text" placeholder="장소,도로 검색"><br>
+                            <h4>성북구 월곡 2동</h4>
+                            <ul>
+                                <li>오전 <img src="img/sun.jpg"></li>
+                                <li>오전 <img src="img/sun.jpg"></li>
+                            </ul> 
+                        </div>
+                    </div></li>
+                    <li><div class="map1"><img src="img/map3.jpg"><div class="weather"><input type="text" placeholder="버스번호를 입력하세요"></p><div class="bus">버스 찾기</div></div></div></li>
+                    <li><div class="map1"><img src="img/map4.jpg">
+                        <div class="weather">
+                            <form>
+                                <select name="subway">
+                                    <option value="1" selected>1호선</option>
+                                    <option value="2" selected>2호선</option>
+                                    <option value="3" selected>3호선</option>
+                                    <option value="4" selected>4호선</option>
+                                    <option value="5" selected>5호선</option>
+                                    <option value="6" selected>6호선</option>
+                                    <option value="7" selected>7호선</option>
+                                </select>
+                            </form> </p>
+                            <div class="bus">버스 찾기</div>
+                        </div>
+                    </div></li>
+                </ul>
+            </div>
+        </aside>
+        <footer>
+            <h2>#BOOK #COFFEE #SCENT</h2>
+            <div class="box2">
+                <ul>
+                    <li>개인정보 취급정책 | </li>
+                    <li>이용약관 | </li>
+                    <li>이메일수집거부 | </li>
+                    <li>고객센터 </li>
+                </ul>
+            </div>
+            <div>
+                <strong>본사</strong> 서울 서대문구 <strong>대표이사</strong> 김유진
+            </div>
+            <div>
+                <strong>사업자등록번호</strong> 000-00-00000
+            </div>
+            <div>
+                <strong>대표번호</strong> 000-0000-0000
+            </div>
+        </footer>
+    </body>
+</html>
